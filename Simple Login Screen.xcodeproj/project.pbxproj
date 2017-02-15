@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		296C72FA1E54DB9A00600DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C72F91E54DB9A00600DD3 /* AppDelegate.swift */; };
-		296C72FC1E54DB9A00600DD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C72FB1E54DB9A00600DD3 /* ViewController.swift */; };
 		296C72FF1E54DB9A00600DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296C72FD1E54DB9A00600DD3 /* Main.storyboard */; };
 		296C73011E54DB9A00600DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296C73001E54DB9A00600DD3 /* Assets.xcassets */; };
 		296C73041E54DB9A00600DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296C73021E54DB9A00600DD3 /* LaunchScreen.storyboard */; };
 		296C730F1E54DB9A00600DD3 /* Simple_Login_ScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C730E1E54DB9A00600DD3 /* Simple_Login_ScreenTests.swift */; };
 		296C731A1E54DB9A00600DD3 /* Simple_Login_ScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C73191E54DB9A00600DD3 /* Simple_Login_ScreenUITests.swift */; };
+		296C73281E54DCEC00600DD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C73271E54DCEC00600DD3 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		296C72F61E54DB9A00600DD3 /* Simple Login Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Login Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		296C72F91E54DB9A00600DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		296C72FB1E54DB9A00600DD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		296C72FE1E54DB9A00600DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		296C73001E54DB9A00600DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		296C73031E54DB9A00600DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		296C73151E54DB9A00600DD3 /* Simple Login ScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Login ScreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		296C73191E54DB9A00600DD3 /* Simple_Login_ScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_Login_ScreenUITests.swift; sourceTree = "<group>"; };
 		296C731B1E54DB9A00600DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		296C73271E54DCEC00600DD3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				296C72F91E54DB9A00600DD3 /* AppDelegate.swift */,
-				296C72FB1E54DB9A00600DD3 /* ViewController.swift */,
 				296C72FD1E54DB9A00600DD3 /* Main.storyboard */,
+				296C73271E54DCEC00600DD3 /* LoginViewController.swift */,
 				296C73001E54DB9A00600DD3 /* Assets.xcassets */,
 				296C73021E54DB9A00600DD3 /* LaunchScreen.storyboard */,
 				296C73051E54DB9A00600DD3 /* Info.plist */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				296C72FC1E54DB9A00600DD3 /* ViewController.swift in Sources */,
+				296C73281E54DCEC00600DD3 /* LoginViewController.swift in Sources */,
 				296C72FA1E54DB9A00600DD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
