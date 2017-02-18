@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signupButton: UIButton!
     
+    //Arrays for user entries
     var emailArray: [String] = []
     var usernameArray: [String] = []
     var passwordArray: [String] = []
