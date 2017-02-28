@@ -106,7 +106,7 @@ class LoginViewController: UIViewController {
     //Email Validation Format. True means email is good.
     func validateEmailFormat(candidate: String) -> Bool {
         
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+        let emailRegex = "[A-Z0-9a-z._-]+@[A-Za-z0-9]+\\.[A-Za-z]{2,}"
         
         return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: candidate)
     }
@@ -114,28 +114,15 @@ class LoginViewController: UIViewController {
     //Username Validation Existing. True means not existing.
     func validateUsernameExisting(text: String) -> Bool {
         
-        var result = true
-        
-        if usernameArray.contains(usernameTextField.text!) {
-            
-            result = false
-        }
-        
-        return result
+        return !(usernameArray.contains(usernameTextField.text!))
         
     }
     
     //Username Validation Length. True means username is long enough.
     func validateUsernameLength(text: String) -> Bool {
         
-        var result = true
+        return !((usernameTextField.text?.characters.count)! < 9)
         
-        if ((usernameTextField.text?.characters.count)! < 9) {
-            
-            result = false
-        }
-        
-        return result
     }
     
     //Password Validation Format. True means password is good.
