@@ -14,6 +14,16 @@ import UIKit
  * 3. Check if user name is valid.
  * 4. Ensure password is strong (Needs a number and special character and needs to be at least 8 characters)
  * 5. Print log statements for each failure and success case
+ 
+ * Part III
+ * 1. Add Wallfly Logo above email text field
+ * 2. Show error view under each field to display the exact error that field. Example: Email isn't valid, Username is too short, etc).
+ * 3. Pressing the sign up button should:
+        a. Hide the Sign up button.
+        b. Show a loading indicator.
+        c. Wait 3 seconds, then show success.
+        d. After the 3 seconds, go to another view controller that shows "SUCCESS" in big green letters.
+ 
  **/
 
 class LoginViewController: UIViewController {
